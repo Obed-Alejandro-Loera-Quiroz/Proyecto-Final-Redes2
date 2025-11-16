@@ -1,0 +1,14 @@
+# Ignorar volúmenes y datos generados por Docker
+mailserver-proyecto/docker-data/
+
+# Logs
+*.log
+
+# Archivos temporales
+tmp/
+*.tmp
+
+# Evitar archivos de sistema
+.DS_Store
+Thumbs.db
+

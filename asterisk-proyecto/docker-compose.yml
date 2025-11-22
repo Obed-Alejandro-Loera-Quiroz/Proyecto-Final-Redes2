@@ -1,0 +1,11 @@
+services:
+  tele:
+    image: mlan/asterisk:full
+    container_name: ast-tele
+    restart: always
+    network_mode: host
+    volumes:
+      - ./asterisk/conf:/etc/asterisk
+      - ./asterisk/data:/var/lib/asterisk
+      - ./asterisk/spool:/var/spool/asterisk
+      - ./asterisk/logs:/var/log/asterisk
